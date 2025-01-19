@@ -1,6 +1,8 @@
 <script lang="ts">
-	import '../app.css';
-	let { children } = $props();
+	import '../app.css'
+	import Layout from '$ui/_layout/Layout.svelte'
 </script>
 
-{@render children()}
+<Layout>
+	<slot />
+</Layout>
