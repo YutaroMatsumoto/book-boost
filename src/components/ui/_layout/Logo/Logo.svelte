@@ -1,1 +1,1 @@
-<a class="bg-green-500 text-2xl font-bold text-white" href="/" aria-label="サイトのトップページへ遷移する">Shellf</a>
+<a class="text-green-500 font-bold text-2xl font-bol" href="/" aria-label="サイトのトップページへ遷移する">Shellf</a>
