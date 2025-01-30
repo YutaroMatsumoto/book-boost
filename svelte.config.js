@@ -17,6 +17,11 @@ const config = {
       "$ui/*": "src/components/ui/*",
       "$models/*": "src/models/*",
     },
+    files: {
+      hooks: {
+        server: "src/hooks/hooks.server.ts",
+      },
+    },
   },
 };
 
