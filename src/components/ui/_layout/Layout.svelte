@@ -5,17 +5,20 @@
 
 	import { createModal } from '$globalStates/modal'
   import Modal from '$ui/Modal/Modal.svelte';
+  import type { Session } from '@supabase/supabase-js';
 	// import Modal from '$ui/Modal/Modal.svelte'
 
 	// import { createSnackbar } from '$globalStates/snackbar'
 	// import Snackbar from '$ui/Snackbar/Snackbar.svelte'
+
+	const { session } : {session:Session | null} = $props()
 
 	const modal = createModal
 	// const snackbars = createSnackbar
 </script>
 
 <div class="h-screen overflow-auto">
-	<Header />
+	<Header {session} />
 	<main class="mt-14 bg-gray-50 overflow-auto min-h-[calc(100vh-168px)]">
 		<slot />
 	</main>
