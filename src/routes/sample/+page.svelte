@@ -3,12 +3,11 @@
 
   $effect(() => {
     console.log({data})
+    console.log("sample page")
   })
 
 </script>
 
 <ul>
-  {#each data.countries as country}
-    <li>{country.name}</li>
-  {/each}
+  s
 </ul>
